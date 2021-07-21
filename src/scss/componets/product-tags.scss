@@ -1,0 +1,22 @@
+.product-tags{
+	position: relative;
+	overflow: hidden;
+	font-weight: 700;
+	line-height: 1.3;
+	white-space: nowrap;
+	&:after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 50px;
+		background: linear-gradient(90deg,#fff0,#fff);
+		content: "";
+	}
+}
+.product-tag--red {
+	color: #fe4136;
+}
+.product-tag--teal {
+	color: #2dc7b4;
+}

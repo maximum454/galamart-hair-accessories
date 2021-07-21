@@ -1,0 +1,152 @@
+@import "partials/normalize";
+
+@import "mixin";
+@import "fonts";
+@import "icon";
+@import "buttons";
+@import "form";
+@import "table";
+@import "tabs";
+@import "alert";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.wrp {
+    overflow: hidden;
+    position: relative;
+}
+
+.d-none {
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+
+.d-desktop-none {
+    display: none;
+    @include r(767) {
+        display: block;
+    }
+}
+
+.d-mobile-none {
+    display: block;
+    @include r(767) {
+        display: none !important;
+    }
+}
+
+.container {
+    max-width: 1380px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.w100 {
+    width: 100%;
+}
+.w860 {
+    max-width: 860px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    color: #999;
+    background-image: url("../img/icons-sprite.svg#slider-arrow");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+}
+ul {
+    padding-left: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    li {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+}
+.text-warning {
+    color: #F2994A;
+}
+.text-danger{
+    color: #eb5757;
+}
+.text-link{
+    color: #324c9a;
+}
+.text-white{
+    color: #fff;
+}
+
+.text-success {
+    color: #6fcf97;
+}
+.text-muted {
+    color: #a4a9bb;
+}
+.text-center {
+    text-align: center;
+}
+
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.d-block {
+    display: block;
+}
+
+a {
+    cursor: pointer;
+    transition: color .15s ease,background-color .15s ease;
+    color: #fd7400;
+    text-decoration: none;
+    background-color: #0000;
+}
+.v-hidden {
+    visibility: hidden!important;
+}
+@import "componets/banner-top-hair";
+@import "componets/catalog-card";
+@import "componets/product-price";
+@import "componets/product-tags";
+@import "componets/product-badge";
+@import "componets/rating";
+@import "componets/rating-group";
+@import "componets/status-list";
+@import "componets/select-discount";
+@import "componets/term-action";
+@import "componets/idea-section";
+
+
+

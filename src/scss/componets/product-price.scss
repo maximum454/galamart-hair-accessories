@@ -1,0 +1,18 @@
+.product-price{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	&__main {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 1;
+	}
+	&__old {
+		margin-left: 10px;
+		color: #8a8a8a;
+		font-size: 18px;
+		line-height: 1.2;
+		text-decoration: line-through;
+		text-decoration-color: #fe4136;
+	}
+}

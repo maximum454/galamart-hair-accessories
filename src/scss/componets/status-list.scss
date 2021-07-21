@@ -1,0 +1,13 @@
+.status-list{
+	color: #8a8a8a;
+	&__item {
+		white-space: nowrap;
+	}
+	&__link {
+		color: #25952d;
+		border-bottom: 1px dashed;
+		&--gray {
+			color: #8a8a8a;
+		}
+	}
+}

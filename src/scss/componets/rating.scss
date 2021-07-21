@@ -1,0 +1,14 @@
+.rating{
+	display: flex;
+	&__item {
+		width: 1em;
+		height: 1em;
+		background: 50%/contain no-repeat url(../img/star.svg);
+		&:not(:last-child) {
+			margin-right: 4px;
+		}
+		&.active {
+			background-image: url(../img/star-active.svg);
+		}
+	}
+}

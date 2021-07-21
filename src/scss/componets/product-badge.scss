@@ -1,0 +1,13 @@
+.product-badge{
+	display: inline-block;
+	padding: 3px 12px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.25;
+	background-color: #fe4136;
+	border-radius: 3px;
+	&--lg {
+		font-size: 16px;
+	}
+}

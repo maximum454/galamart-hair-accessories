@@ -1,0 +1,59 @@
+.banner-top-hair{
+	overflow: hidden;
+	position: relative;
+	background-image: url("../img/slider-bg2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 115px 0 174px;
+	&__title{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 60px;
+		line-height: 70px;
+
+		color: #FFFFFF;
+	}
+	&__suptitle{
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		line-height: 70px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	&__skidka{
+		position: relative;
+		width: fit-content;
+		margin: 0 auto;
+		-webkit-transform: skew(20deg);
+		-moz-transform: skew(20deg);
+		-o-transform: skew(20deg);
+		background: #776BD1;
+		padding: 20px;
+		margin-bottom: 25px;
+		span{
+			font-style: normal;
+			font-weight: bold;
+			font-size: 60px;
+			line-height: 60px;
+			color: #FFFFFF;
+			-webkit-transform: skew(-20deg);
+			-moz-transform: skew(-20deg);
+			-o-transform: skew(-20deg);
+			display: block;
+		}
+	}
+	&__text{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 21px;
+		text-transform: uppercase;
+		color: #333333;
+		margin-bottom: 25px;
+	}
+	@include r(767){
+	}
+}
