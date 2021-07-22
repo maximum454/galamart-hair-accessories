@@ -1238,7 +1238,6 @@ template {
           transform: translate(0, -50%);
   width: 8px;
   height: 8px;
-  background-image: url("../img/icons-sprite.svg#arrow-select-dark");
   border: none;
 }
 
@@ -1680,7 +1679,6 @@ body.lock {
   width: 100%;
   height: 100%;
   color: #999;
-  background-image: url("../img/icons-sprite.svg#slider-arrow");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px;
@@ -2089,6 +2087,7 @@ a {
 
 .select-discount__title a {
   color: #EC8458;
+  text-decoration: underline;
 }
 
 .select-discount__body {
@@ -2139,6 +2138,22 @@ a {
 
 .select-discount__footer .btn {
   color: #EC8458;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.select-discount__footer .btn img {
+  margin-right: 10px;
+  vertical-align: baseline;
 }
 
 .term-action {
@@ -2209,6 +2224,15 @@ a {
   padding: 0;
 }
 
+.term-action__list li::marker {
+  color: #EC8458;
+}
+
+.term-action__list li a {
+  color: #EC8458;
+  text-decoration: underline;
+}
+
 .idea-section {
   margin-bottom: 64px;
   background: url(../img/idea-section-decor.png) top left no-repeat;
@@ -2265,6 +2289,31 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.idea-section__footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.idea-section__footer .btn {
+  color: #EC8458;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.idea-section__footer .btn img {
+  margin-right: 10px;
+  vertical-align: baseline;
 }
 
 .video-section {

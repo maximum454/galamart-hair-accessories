@@ -59,6 +59,15 @@ text-align: center;
   &__list {
     margin: 0;
     padding: 0;
+    li{
+      &::marker{
+        color: #EC8458;
+      }
+      a{
+        color: #EC8458;
+        text-decoration: underline;
+      }
+    }
   }
 
 }

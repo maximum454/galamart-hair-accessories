@@ -16,6 +16,7 @@
 
     a {
       color: #EC8458;
+      text-decoration: underline;
     }
   }
 
@@ -65,6 +66,15 @@
     text-align: center;
     .btn{
       color: #EC8458;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      text-decoration: underline;
+      img{
+        margin-right: 10px;
+        vertical-align: baseline;
+      }
     }
   }
 }
