@@ -2275,6 +2275,10 @@ a {
   height: 210px;
 }
 
+.idea-section .more.idea {
+  display: none;
+}
+
 .idea-section img {
   display: block;
   max-width: 100%;
