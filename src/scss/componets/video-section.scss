@@ -5,8 +5,10 @@
     content: '';
     display: block;
     position: absolute;
-    background: url(../img/video-decor.png) no-repeat;
-    right: 0;
+    background-image: url(../img/video-decor.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    right: -50px;
     top: -200px;
     width: 400px;
     height: 600px;
@@ -97,6 +99,28 @@
     }
     .swiper-pagination {
       display: none;
+    }
+  }
+  @include r(1023){
+    &:after {
+
+      right: -50px;
+      top: -100px;
+      width: 200px;
+      height: 400px;
+
+    }
+  }
+  @include r(767){
+    &:after {
+      right: -50px;
+      top: -100px;
+      width: 100px;
+      height: 300px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none!important;
     }
   }
 }

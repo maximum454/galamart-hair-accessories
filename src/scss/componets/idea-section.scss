@@ -58,4 +58,15 @@
       }
     }
   }
+  @include r(1023){
+    .idea {
+      column-count: 3;
+      max-height: none;
+    }
+  }
+  @include r(767){
+    .idea {
+      column-count: 2;
+    }
+  }
 }

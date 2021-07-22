@@ -26,13 +26,12 @@
 	&__skidka{
 		position: relative;
 		width: fit-content;
-		margin: 0 auto;
+		margin: 0 auto 25px;
 		-webkit-transform: skew(20deg);
 		-moz-transform: skew(20deg);
 		-o-transform: skew(20deg);
 		background: #776BD1;
 		padding: 20px;
-		margin-bottom: 25px;
 		span{
 			font-style: normal;
 			font-weight: bold;
@@ -54,6 +53,32 @@
 		color: #333333;
 		margin-bottom: 25px;
 	}
+	@include r(1023){
+		padding: 64px 0;
+		background-position: center left;
+	}
 	@include r(767){
+		&__title{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 30px;
+			line-height: 40px;
+
+			color: #FFFFFF;
+		}
+		&__suptitle{
+			font-size: 20px;
+			line-height: 26px;
+		}
+		&__skidka{
+			span{
+				font-size: 40px;
+			}
+		}
+		&__text{
+			font-size: 12px;
+			line-height: 16px;
+		}
+
 	}
 }

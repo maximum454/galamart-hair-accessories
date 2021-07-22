@@ -1777,13 +1777,12 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 25px;
   -webkit-transform: skew(20deg);
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
   background: #776BD1;
   padding: 20px;
-  margin-bottom: 25px;
 }
 
 .banner-top-hair__skidka span {
@@ -2319,8 +2318,10 @@ a {
   content: '';
   display: block;
   position: absolute;
-  background: url(../img/video-decor.png) no-repeat;
-  right: 0;
+  background-image: url(../img/video-decor.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  right: -50px;
   top: -200px;
   width: 400px;
   height: 600px;
@@ -2493,6 +2494,25 @@ a {
   .tabs__content.active::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  .banner-top-hair {
+    padding: 64px 0;
+    background-position: center left;
+  }
+
+  .idea-section .idea {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+    max-height: none;
+  }
+
+  .video-section:after {
+    right: -50px;
+    top: -100px;
+    width: 200px;
+    height: 400px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2501,6 +2521,76 @@ a {
   }
 
   .d-mobile-none {
+    display: none !important;
+  }
+
+  .banner-top-hair__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+
+  .banner-top-hair__suptitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .banner-top-hair__skidka span {
+    font-size: 40px;
+  }
+
+  .banner-top-hair__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .select-discount__title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .term-action__title {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .term-action__body:before {
+    width: 111px;
+    height: 79px;
+  }
+
+  .term-action__body:after {
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    right: -35px;
+    background-image: url("../img/term-action-decor2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 155px;
+    height: 159px;
+  }
+
+  .idea-section .idea {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+
+  .video-section:after {
+    right: -50px;
+    top: -100px;
+    width: 100px;
+    height: 300px;
+  }
+
+  .video-section .swiper-button-next,
+  .video-section .swiper-button-prev {
     display: none !important;
   }
 }

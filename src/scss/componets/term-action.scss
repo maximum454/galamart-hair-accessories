@@ -69,5 +69,30 @@ text-align: center;
       }
     }
   }
+  @include r(767){
+    &__title {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 20px;
+    }
+    &__body {
 
+      &:before{
+        width: 111px;
+        height: 79px;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: -35px;
+        right: -35px;
+        background-image: url("../img/term-action-decor2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 155px;
+        height: 159px;
+      }
+    }
+  }
 }
