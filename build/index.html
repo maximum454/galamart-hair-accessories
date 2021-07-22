@@ -36,6 +36,7 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://static.galamart.ru/bitrix/templates/main_mobile/fancyBox/jquery.fancybox.css?14694187474895"/>
     <link rel="stylesheet" href="css/hair.min.css">
 </head>
 
@@ -1761,7 +1762,20 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://static.galamart.ru/bitrix/templates/main_mobile/fancyBox/jquery.fancybox.js?146941874748706"></script>
 <script src="js/hair.min.js"></script>
+<script>
+    $(function (){
+        $('.video-popup').click(function () {
+            var href = $(this).attr('href');
+            $.fancybox(this, {
+                type: "iframe",
+                href: href
+            });
+            return false;
+        });
+    })
+</script>
 </body>
 
 </html>

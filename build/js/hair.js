@@ -96,3 +96,5 @@ jsideamore.addEventListener('click', function (event){
 
     target.setAttribute('data-next', 3);
 })
+
+
