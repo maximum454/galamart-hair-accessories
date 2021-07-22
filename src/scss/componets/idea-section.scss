@@ -50,6 +50,7 @@
     text-align: center;
     .btn{
       color: #EC8458;
+      background-color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -70,6 +71,21 @@
   @include r(767){
     .idea {
       column-count: 2;
+      max-height: 360px;
+      overflow: hidden;
+    }
+    .item {
+      position: relative;
+      background-size: cover !important;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 10px;
+      &:nth-child(3n + 1) {
+        height: 220px !important;
+      }
+      &:nth-child(n+2) {
+        height: 110px;
+      }
     }
   }
 }

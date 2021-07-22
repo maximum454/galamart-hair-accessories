@@ -2295,6 +2295,7 @@ a {
 
 .idea-section__footer .btn {
   color: #EC8458;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2584,6 +2585,24 @@ a {
     -webkit-column-count: 2;
        -moz-column-count: 2;
             column-count: 2;
+    max-height: 360px;
+    overflow: hidden;
+  }
+
+  .idea-section .item {
+    position: relative;
+    background-size: cover !important;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .idea-section .item:nth-child(3n + 1) {
+    height: 220px !important;
+  }
+
+  .idea-section .item:nth-child(n+2) {
+    height: 110px;
   }
 
   .video-section:after {
