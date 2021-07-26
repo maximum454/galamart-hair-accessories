@@ -101,6 +101,21 @@
       display: none;
     }
   }
+  @include r(1400){
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url(../img/video-decor.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      right: -50px;
+      top: -200px;
+      width: 350px;
+      height: 550px;
+      z-index: -1;
+    }
+  }
   @include r(1023){
     &:after {
 
@@ -118,6 +133,16 @@
       width: 100px;
       height: 300px;
     }
+    .video-slider {
+      &-wrapper {
+        max-width: 890px;
+        width: 100%;
+        margin: 0 auto;
+        background: #F7F4F0;
+        padding: 20px;
+      }
+    }
+
     .swiper-button-next,
     .swiper-button-prev {
       display: none!important;

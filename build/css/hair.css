@@ -2362,6 +2362,22 @@ a {
   display: none;
 }
 
+@media only screen and (max-width: 1400px) {
+  .video-section:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url(../img/video-decor.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    right: -50px;
+    top: -200px;
+    width: 350px;
+    height: 550px;
+    z-index: -1;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .select-discount .swiper-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -2544,6 +2560,14 @@ a {
     top: -100px;
     width: 100px;
     height: 300px;
+  }
+
+  .video-section .video-slider-wrapper {
+    max-width: 890px;
+    width: 100%;
+    margin: 0 auto;
+    background: #F7F4F0;
+    padding: 20px;
   }
 
   .video-section .swiper-button-next,

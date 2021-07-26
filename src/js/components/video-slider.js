@@ -20,7 +20,6 @@ const swiper = new Swiper('.video-slider', {
     },
     breakpoints: {
         768: {
-            slidesPerView: 1,
             spaceBetween: 10,
 
         },
