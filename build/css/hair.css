@@ -2446,6 +2446,16 @@ a {
     max-height: none;
   }
 
+  .idea-section .item:nth-child(4n+1),
+  .idea-section .item:nth-child(4n+4) {
+    height: 470px;
+  }
+
+  .idea-section .item:nth-child(4n+2),
+  .idea-section .item:nth-child(4n+3) {
+    height: 220px;
+  }
+
   .video-section:after {
     right: -50px;
     top: -100px;
