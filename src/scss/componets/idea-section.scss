@@ -82,7 +82,7 @@
   @include r(767){
     .idea {
       column-count: 2;
-      max-height: 365px;
+      max-height: none;
       overflow: hidden;
     }
     .item {
@@ -92,7 +92,7 @@
       width: 100%;
       margin-bottom: 10px;
       &:nth-child(3n + 1) {
-        height: 220px !important;
+        height: 146px !important;
       }
       &:nth-child(n+2) {
         height: 110px;
