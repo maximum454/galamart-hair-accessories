@@ -18,14 +18,15 @@
   .idea {
     column-count: 4;
     column-gap: 30px;
-    max-height: 740px;
+    max-height: 750px;
   }
   .item {
     position: relative;
     background-size: cover !important;
-    display: inline-block;
+    display: block;
     width: 100%;
     margin-bottom: 25px;
+    text-decoration: none;
     &:nth-child(4n+1),
     &:nth-child(4n+4){
       height: 470px;
@@ -74,14 +75,14 @@
       }
       &:nth-child(4n+2),
       &:nth-child(4n+3) {
-        height: 220px;
+        height: 222px;
       }
     }
   }
   @include r(767){
     .idea {
       column-count: 2;
-      max-height: 360px;
+      max-height: 365px;
       overflow: hidden;
     }
     .item {
