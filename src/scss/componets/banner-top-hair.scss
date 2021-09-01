@@ -7,6 +7,23 @@
 	background-position: center;
 	text-align: center;
 	padding: 115px 0 174px;
+    &--v2{
+
+        background-image: radial-gradient(50% 50% at 50% 50%, #F2E3DB 0%, rgba(191, 179, 173, 0) 100%), url("../img/v2/slider-bg.png");
+        .banner-top-hair__skidka{
+            background: linear-gradient(0deg, #FD7400, #FD7400);
+        }
+        .banner-top-hair__title{
+            font-size: 50px;
+            line-height: 60px;
+            color: #333333;
+        }
+        .banner-top-hair__suptitle{
+            font-size: 30px;
+            line-height: 70px;
+            color: #333333;
+        }
+    }
 	&__title{
 		font-style: normal;
 		font-weight: normal;

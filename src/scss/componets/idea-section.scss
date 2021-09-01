@@ -3,6 +3,9 @@
   background: url(../img/idea-section-decor.png) top left no-repeat;
   position: relative;
   z-index: 10;
+  &--v2{
+    background: url(../img/v2/idea-section-decor.png) top left no-repeat;
+  }
   &__title{
     font-style: normal;
     font-weight: normal;
