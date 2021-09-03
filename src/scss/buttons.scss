@@ -119,9 +119,11 @@
 			color: #fff;
 			background-color: #fd7400;
 			border-color: #fd7400;
+			outline: none;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(0,123,255 / 50%);
+			box-shadow: 0 0 0 0.2px rgba(#fd7400, 50%);
+			outline: none;
 		}
 	}
 	&.btn-outline-secondary{

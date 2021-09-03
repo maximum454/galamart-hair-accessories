@@ -666,11 +666,13 @@ template {
   color: #fff;
   background-color: #fd7400;
   border-color: #fd7400;
+  outline: none;
 }
 
 .btn.btn-outline-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem #007b05;
-          box-shadow: 0 0 0 0.2rem #007b05;
+  -webkit-box-shadow: 0 0 0 0.2px #fd7400;
+          box-shadow: 0 0 0 0.2px #fd7400;
+  outline: none;
 }
 
 .btn.btn-outline-secondary {
@@ -1550,21 +1552,6 @@ body.lock {
   display: none;
 }
 
-ul {
-  padding-left: 18px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-ul li {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: #333333;
-  margin-bottom: 10px;
-}
-
 .text-warning {
   color: #F2994A;
 }
@@ -1971,6 +1958,7 @@ a {
 
 .select-discount__title span {
   color: #EC8458;
+  text-decoration: underline;
 }
 
 .select-discount__title a {
@@ -2163,7 +2151,7 @@ a {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  max-width: 621px;
+  max-width: 685px;
   margin: 0 auto 30px;
 }
 
