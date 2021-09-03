@@ -1984,6 +1984,8 @@ a {
   border-bottom: #eeeeee solid 1px;
   overflow: visible;
   position: relative;
+  width: auto;
+  float: none;
 }
 
 .select-discount__body .products-carousel__slide:before {

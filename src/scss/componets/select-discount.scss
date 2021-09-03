@@ -29,7 +29,8 @@
       border-bottom: #eeeeee solid 1px;
       overflow: visible;
       position: relative;
-
+      width: auto;
+      float: none;
       &:before {
         content: "";
         position: absolute;
