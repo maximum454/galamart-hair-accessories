@@ -8,7 +8,6 @@
 	text-align: center;
 	padding: 115px 0 174px;
     &--v2{
-
         background-image: radial-gradient(50% 50% at 50% 50%, #F2E3DB 0%, rgba(191, 179, 173, 0) 100%), url("../img/v2/slider-bg.png");
         .banner-top-hair__skidka{
             background: linear-gradient(0deg, #FD7400, #FD7400);
@@ -24,6 +23,11 @@
             color: #333333;
         }
     }
+	&--ryzhiy{
+		background-image:  url("../img/ryzhiy/ryzhiy-bg.png");
+		background-size: contain;
+		padding: 12% 0 0;
+	}
 	&__title{
 		font-style: normal;
 		font-weight: normal;
@@ -94,6 +98,10 @@
             
             }
         }
+		&--ryzhiy{
+			background-image: url("../img/ryzhiy/ryzhiy-bg-mob.png");
+			padding-top: 42%;
+		}
 		&__title{
 			font-style: normal;
 			font-weight: normal;
